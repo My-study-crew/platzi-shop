@@ -2,18 +2,18 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "@assets": ["assets/"],
-      "@icons": ["assets/icons/"],
-      "@logos": ["assets/logos/"],
-      "@components": ["components/"],
-      "@containers": ["containers/"],
-      "@context": ["context/"],
-      "@hooks": ["hooks/"],
-      "@pages": ["pages/"],
-      "@public": ["public/"],
-      "@routes": ["routes/"],
-      "@styles": ["styles/"],
-      "@templates": ["templates/"]
+      "@assets/*": ["assets/*"],
+      "@icons/*": ["assets/icons/*"],
+      "@logos/*": ["assets/logos/*"],
+      "@components/*": ["components/*"],
+      "@containers/*": ["containers/*"],
+      "@context/*": ["context/*"],
+      "@hooks/*": ["hooks/*"],
+      "@pages/*": ["pages/*"],
+      "@public/*": ["public/*"],
+      "@routes/*": ["routes/*"],
+      "@styles/*": ["styles/*"],
+      "@templates/*": ["templates/*"]
     }
   }
 }
