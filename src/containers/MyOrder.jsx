@@ -15,24 +15,24 @@ const MyOrder = () => {
 
   return (
     <aside className={Styles.MyOrder}>
-      <div className="MyOrder-container">
-        <div className="title-container">
-          <img className="more-clickable-area pointer" src={arrow} alt="arrow" onClick={() => toggleOrder()} />
-          <p className="title">My order</p>
+      <div className={Styles['MyOrder-container']}>
+        <div className={Styles['title-container']}>
+          <img className={Styles['more-clickable-area pointer']} src={arrow} alt="arrow" onClick={() => toggleOrder()} />
+          <p className={Styles.title}>My order</p>
         </div>
-        <div className="my-order-content">
-          <div className="my-orders">
+        <div className={Styles['my-order-content']}>
+          <div className={Styles['my-orders']}>
             {state.cart.map((product) => (
               <OrderItem product={product} key={`orderItem-${product.id}`} />
             ))}
           </div>
-          <div className="order">
+          <div className={Styles.order}>
             <p>
               <span>Total</span>
             </p>
             <p>${sumTotal()}</p>
           </div>
-          <button className="primary-button">Checkout</button>
+          <button className={Styles['primary-button']}>Checkout</button>
         </div>
       </div>
     </aside>
