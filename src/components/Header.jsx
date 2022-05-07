@@ -40,11 +40,11 @@ const Header = () => {
         </div>
         <div className={Styles['navbar-right']}>
           <ul>
-            <li className={Styles['more-clickable-area navbar-email pointer']} onClick={() => toggleMenu()}>
+            <li className={(Styles.pointer, Styles['more-clickable-area'], Styles['navbar-email'])} onClick={() => toggleMenu()}>
               platzi@example.com
             </li>
             <li className={Styles['navbar-shopping-cart']} onClick={() => toggleOrder()}>
-              <Image className={Styles['more-clickable-area pointer']} src={shoppingCart} alt="shopping cart" />
+              <Image className={(Styles.pointer, Styles['more-clickable-area'])} src={shoppingCart} alt="shopping cart" />
               {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
             </li>
           </ul>
