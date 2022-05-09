@@ -1,6 +1,7 @@
 @import 'vars';
 
 .MyOrder {
+  z-index: 1;
   width: 360px;
   padding: 24px;
   box-sizing: border-box;
@@ -79,6 +80,7 @@
   font-weight: bold;
   height: 50px;
 }
+
 @media (max-width: 640px) {
   .MyOrder {
     width: 100%;
