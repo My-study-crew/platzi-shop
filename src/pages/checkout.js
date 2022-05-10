@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import OrderItem from '@components/OrderItem';
+// import OrderItem from '@components/OrderItem';
 import Styles from '@styles/Checkout.module.scss';
 
 const Checkout = () => {
