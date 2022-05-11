@@ -21,12 +21,14 @@ const ProductItem = ({ product }) => {
           <p>${product.price}</p>
           <p>{product.title}</p>
         </div>
-        <figure className={Styles['more-clickable-area']} onClick={() => handleClick(product)}>
-          {state.cart.includes(product) ? (
-            <Image className={(Styles.disabled, Styles['add-to-cart-btn'])} src={addedToCartImage} alt="added to cart" />
-          ) : (
-            <Image className={(Styles.pointer, Styles['add-to-cart-btn'])} src={addToCartImage} alt="add to cart" />
-          )}
+        <figure>
+          <div role={'presentation'} className={Styles['more-clickable-area']} onClick={() => handleClick(product)}>
+            {state.cart.includes(product) ? (
+              <Image className={(Styles.disabled, Styles['add-to-cart-btn'])} src={addedToCartImage} alt="added to cart" />
+            ) : (
+              <Image className={(Styles.pointer, Styles['add-to-cart-btn'])} src={addToCartImage} alt="add to cart" />
+            )}
+          </div>
         </figure>
       </div>
     </div>

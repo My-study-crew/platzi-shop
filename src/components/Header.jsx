@@ -22,33 +22,37 @@ const Header = () => {
           </Link>
           <ul>
             <li>
-              <a href="/">All</a>
+              <Link href="/">All</Link>
             </li>
             <li>
-              <a href="/">Clothes</a>
+              <Link href="/">Clothes</Link>
             </li>
             <li>
-              <a href="/">Electronics</a>
+              <Link href="/">Electronics</Link>
             </li>
             <li>
-              <a href="/">Furnitures</a>
+              <Link href="/">Furniture</Link>
             </li>
             <li>
-              <a href="/">Toys</a>
+              <Link href="/">Toys</Link>
             </li>
             <li>
-              <a href="/">Others</a>
+              <Link href="/">Others</Link>
             </li>
           </ul>
         </div>
         <div className={Styles['navbar-right']}>
           <ul>
-            <li className={(Styles.pointer, Styles['more-clickable-area'], Styles['navbar-email'])} onClick={() => toggleMenu()}>
-              platzi@example.com
+            <li>
+              <div role={'presentation'} className={(Styles.pointer, Styles['more-clickable-area'], Styles['navbar-email'])} onClick={() => toggleMenu()}>
+                platzi@example.com
+              </div>
             </li>
-            <li className={Styles['navbar-shopping-cart']} onClick={() => toggleOrder()}>
-              <Image className={(Styles.pointer, Styles['more-clickable-area'])} src={shoppingCart} alt="shopping cart" />
-              {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
+            <li>
+              <div role={'presentation'} className={Styles['navbar-shopping-cart']} onClick={() => toggleOrder()}>
+                <Image className={(Styles.pointer, Styles['more-clickable-area'])} src={shoppingCart} alt="shopping cart" />
+                {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
+              </div>
             </li>
           </ul>
         </div>
